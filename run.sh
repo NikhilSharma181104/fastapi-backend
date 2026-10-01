@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/ubuntu/fastapi-backend/venv/bin/python -m uvicorn src.main:app --host 127.0.0.1 --port 8000
