@@ -11,6 +11,7 @@ def read_root():
 def ping():
     return {"message": "pong"}
 
-@app.get("/ping")
-def ping():
-    return {"message": "pong"}
+@app.get("/health")
+def health_check():
+    return {"status": "healthy", "service": "inventory-api"}
+
